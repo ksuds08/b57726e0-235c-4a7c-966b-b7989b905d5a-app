@@ -1,0 +1,18 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+header {
+    background-color: #2E86C1;
+}
+button {
+    background-color: #F4D03F;
+}
+button:hover {
+    background-color: #D4AC0D;
+}
+#output {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ECF0F1;
+    border-radius: 5px;
+}
