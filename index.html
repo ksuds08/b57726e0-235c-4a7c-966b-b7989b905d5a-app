@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResumeCraft AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-700 p-4 text-white flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-eeM7RLe3Wv2HZ7Toub47POas/user-rnGwZEmjnwoUoF8lEvadvt0O/img-1DNQaxwJVtvbRIVYjnSnNS7X.png?st=2025-07-23T18%3A22%3A37Z&se=2025-07-23T20%3A22%3A37Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=475fd488-6c59-44a5-9aa9-31c4db451bea&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-23T05%3A55%3A13Z&ske=2025-07-24T05%3A55%3A13Z&sks=b&skv=2024-08-04&sig=AFXhKaeJdvUbk/%2BzQdZk%2BBz9u/YrXHv1uKqZZMvKCTI%3D" alt="Logo" class="h-10 mr-3">
+            <h1 class="text-2xl font-bold">ResumeCraft AI</h1>
+        </div>
+        <p class="italic">Shape Your Future with Smart Designs</p>
+    </header>
+    <main class="max-w-4xl mx-auto py-10">
+        <section class="bg-white shadow-md p-6 rounded-md">
+            <h2 class="text-2xl font-semibold mb-4">Create Your Resume</h2>
+            <form id="resumeForm" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                    <input type="text" id="name" name="name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                </div>
+                <div>
+                    <label for="jobHistory" class="block text-sm font-medium text-gray-700">Job History</label>
+                    <textarea id="jobHistory" name="jobHistory" rows="3" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
+                </div>
+                <div>
+                    <label for="skills" class="block text-sm font-medium text-gray-700">Skills</label>
+                    <input type="text" id="skills" name="skills" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                </div>
+                <div>
+                    <label for="careerObjective" class="block text-sm font-medium text-gray-700">Career Objective</label>
+                    <textarea id="careerObjective" name="careerObjective" rows="3" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
+                </div>
+                <button type="submit" class="bg-yellow-500 text-white py-2 px-4 rounded-md shadow-md hover:bg-yellow-600">Generate Resume</button>
+            </form>
+            <div id="output" class="mt-4"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
